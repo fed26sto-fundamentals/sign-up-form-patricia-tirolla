@@ -1,0 +1,60 @@
+
+* {
+    height: min(800px, 100vh);
+    margin: auto;
+}
+
+#wrap {
+    display: flex;
+    align-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    width: 40vw;
+    
+}
+
+#background {
+    display: flex;
+    align-self: center;
+    width: 40vw;
+    z-index: -1;
+    position: relative;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 40vw;
+    background-color: black;
+    opacity: 0.6;
+    height: 10vh;
+    position: absolute;
+    top: 30%;
+}
+
+#logo {
+    display: flex;
+    height: 10vh;
+    background-color: black;
+    justify-content: center;
+    margin: 2px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "MedievalSharp";
+    height: max-content;
+    margin: 2px;
+    align-self: center;
+}
+
+main {
+    display: flex;
+    justify-content: right;
+}
