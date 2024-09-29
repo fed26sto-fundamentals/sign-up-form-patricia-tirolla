@@ -56,5 +56,49 @@ h1 {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: right;
 }
+
+p {
+    display: flex;
+    height: fit-content;
+}
+
+#forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.form-row {
+    display: flex;
+    height: fit-content;
+    margin: 2px;
+    gap: 5px;
+}
+
+form {
+    height: fit-content;
+    padding: 5px;
+    margin: 2px;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 20px;
+    width: fit-content;
+    padding: 5px;
+    margin: 2px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    height: 20px;
+}
+
