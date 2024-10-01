@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrap">
@@ -19,55 +22,56 @@
                 <h1>ODIN</h1>
             </div>
         </header>
-        <main>
-            <p>
-                This is not a real online service! You know you need something
-                like this in you life to help you realize your deepest dreams.
-                <br>
-                Sign up now to get started.
-                <br><br>
-                You know you want to.
-            </p>
-            <!-- <p></p> -->
-            <section id="forms">
-                <div class="form-row">
-                    <form>
-                        <label for="first_name">First Name</label>
-                        <input tyoe="text" id="first_name" placeholder="Beyoncé Gisele">
-                    </form>
-                    <form>
-                        <label for="last_name">Last Name</label>
-                        <input tyoe="text" id="last_name" placeholder="Knowles Carter">
-                    </form>
-                </div>
-                <div class="form-row">
-                    <form>
-                        <label for="email">Email</label>
-                        <input tyoe="email" id="email" placeholder="fulano@mail.com">
-                    </form>
-                    <form>
-                        <label for="phone_number">Phone number</label>
-                        <input tyoe="phone_number" id="phone_number" placeholder="xx-xxx xx xx">
-                    </form>
-                </div>
-                <div class="form-row">
-                    <form>
-                        <label for="password">Password</label>
-                        <input tyoe="password" id="password">
-                    </form>
-                    <form>
-                        <label for="confirm_password">Confirm Password</label>
-                        <input tyoe="password" id="confirm_password">
-                    </form>
-                </div>
-        </section>
-        </main>
-        <footer>
-            <button>
-
-            </button>
-            <p></p>
-        </footer>
+        <div id="right">
+            <main>
+                <p>
+                    This is not a real online service! You know you need something<br>
+                    like this in you life to help you realize your deepest dreams.
+                    <br>
+                    Sign up now to get started.
+                    <br><br>
+                    You know you want to.
+                </p>
+                <!-- <p></p> -->
+                <fieldset id="forms">
+                    <legend>Let's do this!</legend>
+                    <div class="form-row">
+                        <form>
+                            <label for="first_name">FIRST NAME</label>
+                            <input tyoe="text" id="first_name" placeholder="Beyoncé Gisele">
+                        </form>
+                        <form>
+                            <label for="last_name">LAST NAME</label>
+                            <input tyoe="text" id="last_name" placeholder="Knowles Carter">
+                        </form>
+                    </div>
+                    <div class="form-row">
+                        <form>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="fulano@mail.com" required>
+                        </form>
+                        <form>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" minlength="9" id="phone_number" placeholder="xx-xxx xxxx" pattern="[0-9]{2}-[0-9]{3} [0-9]{4}">
+                        </form>
+                    </div>
+                    <div class="form-row">
+                        <form>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" minlength="8" id="password" required>
+                        </form>
+                        <form>
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" required>
+                        </form>
+                    </div>
+                </fieldset>
+            </main>
+            <footer>
+                <button type="submit">Create Account</button>
+                <p id="down_text">Already have an account: Log in</p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
