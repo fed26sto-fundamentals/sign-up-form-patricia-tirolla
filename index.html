@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div id="wrap">
         <header>
-        <img id="background" src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="A picture of green leafs">
+            <img id="background" src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="A picture of green leafs">
             <div id="logo-container">
                 <img id="logo" src="img/odin-lined.png" alt="odin project logo">
                 <h1>ODIN</h1>
@@ -32,7 +36,7 @@
                     <br><br>
                     You know you want to.
                 </p>
-                <!-- <p></p> -->
+                <!-- the fieldset tag wraps the form and makes it possible to add legend -->
                 <fieldset id="forms">
                     <legend>Let's do this!</legend>
                     <div class="form-row">
@@ -52,17 +56,20 @@
                         </form>
                         <form>
                             <label for="phone_number">PHONE NUMBER</label>
-                            <input type="tel" minlength="9" id="phone_number" placeholder="xx-xxx xxxx" pattern="[0-9]{2}-[0-9]{3} [0-9]{4}">
+                            <input type="tel" minlength="9" id="phone_number" placeholder="xx-xxx xxxx"
+                                pattern="[0-9]{2}-[0-9]{3} [0-9]{4}">
                         </form>
                     </div>
                     <div class="form-row">
                         <form>
                             <label for="password">PASSWORD</label>
                             <input type="password" minlength="8" id="password" required>
+                            <span class="alert">Invalid Password</span>
                         </form>
                         <form>
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password" required>
+                            <input type="password" minlength="8" id="confirm_password" required>
+                            <span class="alert">Invalid Password</span>
                         </form>
                     </div>
                 </fieldset>
@@ -74,4 +81,5 @@
         </div>
     </div>
 </body>
+
 </html>

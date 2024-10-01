@@ -123,8 +123,19 @@ input {
     border-style: solid;
 }
 
-input:invalid {
+/* makes the invalid password alert hidden */
+.alert {
+    visibility: hidden;
+    color: red;
+}
+
+input:not(:focus):user-invalid {
     border: solid red;
+}
+
+/* makes the alert visible  */
+input:not(:focus):user-invalid ~ .alert {
+    visibility: visible;
 }
 
 label {
