@@ -1,19 +1,18 @@
 
 * {
     height: min(800px, 100vh);
-    margin: auto;
 }
 
 #wrap {
     display: flex;
     align-content: center;
+    justify-content: center;
 }
 
 header {
     display: flex;
     justify-content: left;
     width: 40vw;
-    
 }
 
 #background {
